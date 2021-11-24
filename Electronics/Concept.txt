@@ -9,5 +9,6 @@ Voltage Regulator IC		: MIC2937A-12WU, TL751M12QKVURQ1
 reverse polarity protection : BAS20,235
 Battery contact sping		: 5202
 Battery contact flat		: 5224
-Power Switch				: 
-Power Connector				: 
+Power Switch				: APEM 21136NA
+Power Jack					: MIC2937A-12WU
+Power Plug					: S761KS15
