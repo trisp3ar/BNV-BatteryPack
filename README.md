@@ -16,3 +16,5 @@ This design is an open source design and everyone is welcome to build, modify an
 - protection index    : IP68 (planned/unverified)
 - Dimensions          : 111 mm y 97 mm x36 mm
 - Weight (empty)      : N/A
+
+25.11.2021
