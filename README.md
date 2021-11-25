@@ -10,9 +10,9 @@ This design is an open source design and everyone is welcome to build, modify an
 
 ## Specifications: (datasheet will be added with Release 1.0)
 
-- Batteries           : 4 x 18650 or CR123A
 - Output voltage      : 12 V
-- Output current max  : 750 mA
-- Weight              : N/A
-- Size                : N/A
-- protection index    : IP68 (unverified)
+- Batteries           : 4 x 18650 or CR123A
+- Current Output      : 750 mA
+- protection index    : IP68 (planned/unverified)
+- Dimensions          : 111 mm y 97 mm x36 mm
+- Weight (empty)      : N/A
