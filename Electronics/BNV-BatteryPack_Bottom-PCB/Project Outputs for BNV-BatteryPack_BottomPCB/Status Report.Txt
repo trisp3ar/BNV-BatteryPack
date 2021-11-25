@@ -1,0 +1,28 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [BNV-BatteryPack_BottomPCB.PrjPcb]
+   Generated File[Bottom-PCB.GTO]
+   Generated File[Bottom-PCB.GTP]
+   Generated File[Bottom-PCB.GTS]
+   Generated File[Bottom-PCB.GTL]
+   Generated File[Bottom-PCB.GBL]
+   Generated File[Bottom-PCB.GBS]
+   Generated File[Bottom-PCB.GBP]
+   Generated File[Bottom-PCB.GBO]
+   Generated File[Bottom-PCB.GM1]
+   Generated File[Bottom-PCB.GM5]
+   Generated File[Bottom-PCB.GM13]
+   Generated File[Bottom-PCB.GM15]
+   Generated File[Bottom-PCB.GPT]
+   Generated File[Bottom-PCB.GPB]
+   Generated File[Bottom-PCB.GD1]
+   Generated File[Bottom-PCB.GG1]
+   Generated File[Bottom-PCB.RUL]
+   Generated File[Bottom-PCB.EXTREP]
+   Generated File[Bottom-PCB.REP]
+
+
+Files Generated   : 19
+Documents Printed : 0
+
+Finished Output Generation At 12:00:49 On 25.11.2021

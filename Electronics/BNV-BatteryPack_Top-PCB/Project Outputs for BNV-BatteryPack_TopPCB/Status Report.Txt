@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [BNV-BatteryPack_TopPCB.PrjPcb]
+   Generated File[Top-PCB.TXT]
+   Generated File[Top-PCB.LDP]
+   Generated File[Top-PCB.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 12:08:52 On 25.11.2021
