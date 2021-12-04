@@ -1,3 +1,8 @@
+*Harware status*: in revision
+
+*Model status*: passing
+
+
 # BNV-BatteryPack
 
 This is the Bootleg Night Vision Battery Pack, based on L3HARRIS BATTERY POWER SUPPLY for PVS 31, GPNVG 18, etc.
