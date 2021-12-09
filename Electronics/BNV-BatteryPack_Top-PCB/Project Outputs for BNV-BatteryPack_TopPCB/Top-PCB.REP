@@ -2,56 +2,14 @@
 FileName = Top-PCB.GBR
 AutoAperture = True
 *************************************************************
-Generating : Bottom Pad Master
-      File : Top-PCB.GPB
+Generating : Mechanical 1
+      File : Top-PCB.GM1
 
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
+    Adding Layer      : Mechanical 1
 
 
 Used DCodes :
-    D13
-*************************************************************
-
-*************************************************************
-Generating : Top Pad Master
-      File : Top-PCB.GPT
-
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D13
-*************************************************************
-
-*************************************************************
-Generating : Top Overlay
-      File : Top-PCB.GTO
-
-    Adding Layer      : Top Overlay
-
-
-Used DCodes :
-    D10
-*************************************************************
-
-*************************************************************
-Generating : Top Solder
-      File : Top-PCB.GTS
-
-    Adding Layer      : Top Solder
-
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D11
-    D12
+    D16
 *************************************************************
 
 *************************************************************
@@ -71,14 +29,56 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Mechanical 1
-      File : Top-PCB.GM1
+Generating : Top Solder
+      File : Top-PCB.GTS
 
-    Adding Layer      : Mechanical 1
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
 
 
 Used DCodes :
-    D15
+    D11
+    D12
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : Top-PCB.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D10
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : Top-PCB.GPT
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : Top-PCB.GPB
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
 *************************************************************
 
 *************************************************************
@@ -93,6 +93,7 @@ Generating : Bottom Layer
 Used DCodes :
     D13
     D14
+    D15
 *************************************************************
 
 *************************************************************
@@ -119,9 +120,8 @@ Generating : Drill Drawing
 
 
 Used DCodes :
-    D15
-    D16
     D17
+    D18
 *************************************************************
 
 *************************************************************
@@ -134,6 +134,6 @@ Generating : Drill Guide
 
 
 Used DCodes :
-    D16
+    D17
 *************************************************************
 
