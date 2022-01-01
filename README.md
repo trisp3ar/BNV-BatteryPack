@@ -1,4 +1,4 @@
-*Harware status*: in revision
+*Harware status*: passing
 
 *Model status*: passing
 
@@ -17,9 +17,9 @@ This design is an open source design and everyone is welcome to build, modify an
 
 - Output voltage      : 12 V
 - Batteries           : 4 x 18650 or CR123A
-- Current Output      : 750 mA
+- Current Output      : 1.25 A
 - protection index    : IP68 (planned/unverified)
 - Dimensions          : 111 mm y 97 mm x36 mm
-- Weight (empty)      : N/A
+- Weight (empty)      : 115 g
 
-25.11.2021
+01.01.2022
