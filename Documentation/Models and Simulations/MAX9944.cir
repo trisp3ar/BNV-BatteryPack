@@ -1,0 +1,112 @@
+* MAX9944
+* ------------------------------
+* Revision 0, 10/2012
+*******************************
+.SUBCKT MAX9944 OUTA INA- INA+ VEE INB+ INB- OUTB VCC
+X1 VCC VEE INA+ INA- OUTA OPAMP
+X2 VCC VEE INB+ INB- OUTB OPAMP
+.ends
+*******************************
+.SUBCKT OPAMP 10 18 17 15 201
+**************************************************
+*    17 = IN+
+*    18 = V-
+*    15 = IN-
+*    201 = OUT
+*    10 = V+
+***************
+*INPUT STAGE
+VS1 10 11 0V
+GBIAS 11 12 304 100 81U
+M1 13 16 12 11 MOSFET
+M2 14 15 12 11 MOSFET
+DBIAS 18 12 DY
+VOS 17 16  10u
+RD1 13 18 1K
+RD2 14 18 1K
+C1 13 14 2P
+CIN1 16 100 10P
+CIN2 15 100 10P
+DIN1 16 11 DA
+DIN2 18 16 DA
+DIN3 15 11 DA
+DIN4 18 15 DA
+FSUP 18 10 VS1 1
+**************
+*INPUT BIAS CURRENT
+IBIAS1 12 16 -4.513n
+IBIAS2 12 15 -3.513n
+*GBIAS1 17 18 10 18 1p
+RID 15 16 1000G
+**************
+**************************************************
+*GAIN STAGE
+GA 25 100 14 13 16.2M
+RO1 25 100 1.541k
+GB 26 100 25 100 451M
+RO2 26 100 2K
+*C02 26 100 3n
+EF 27 100 26 100 1
+CC 25 27 70P
+EF2 29 100 28 100 1
+GC 100 28 26 100 52.16M
+RO3 28 100 2.7K
+CC2 25 29 1.4n
+RO4 28 30 20
+GCMPS 100 25 40 100 193.5U
+**************
+*CURRENT LIMIT
+DP3 26 38 DY
+EP3 38 100 10 18 185M
+DP4 39 26 DY
+EP4 100 39 10 18 185M
+**************
+*INTERNAL GND
+EG1 100 18 10 18 0.5
+**************
+*VOLTAGE LIMITING
+VS2 30 31 0V
+*****
+DP1 30 32 DY
+HP1 34 32 VS2 120.72
+EP1 34 36 10 18 0.5
+VOFF1 100 36 12M
+*****
+DP2 33 30 DY
+HP2 35 33 VS2 70.43
+EP2 37 35 10 18 0.5
+VOFF2 37 100 12.8M
+***************
+*CMRR
+RRR 40 100 1
+GCMR 40 100 12 18 39U
+*PSRR
+GPSR 100 40 10 18 55U
+***************
+*SUPPLY CURRENT
+ISUP 10 18 -450u
+Gsup 10 18 10 18 -3.5u
+VIS5 31 400 0V
+*********************************
+D401 400 401 DY
+D402 402 400 DY
+D403 201 401 DY
+D404 402 201 DY
+I400 401 402 60m
+E103 103 18 10 18 1
+V304 304 100 0.6
+**************************************************
+.MODEL DA D(IS=100E-14 RS=0.5k)
+.MODEL MOSFET PMOS(VTO=-0.2 KP=29.3E-3 KF=92E-27 AF=0.8)
+*.MODEL MOSFET PMOS(VTO=-0.2 KP=29.3E-3)
+.MODEL DX D(IS=100E-14)
+.MODEL DY D(IS=100E-14 N=10M)
+.MODEL MOSFETP PMOS(VTO=-5.0  KP=88E-3 GAMMA=0.01)
+.MODEL MOSFETN NMOS(VTO=5  KP=88E-3 GAMMA=0.01)
+.MODEL QX PNP(BF=1.111E3)
+**************************************************
+.ENDS
+
+
+
+* Copyright (c) 2003-2013 Maxim Integrated Products.  All Rights Reserved.
